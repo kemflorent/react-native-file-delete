@@ -17,6 +17,19 @@ const FileDelete = NativeModules.FileDelete
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return FileDelete.multiply(a, b);
+type Params = {
+  byNames: boolean;
+  files: Array<string>;
+};
+
+export function deleteFile(options: Params): Promise<any> {
+  return FileDelete.deleteFile(options);
+}
+
+export function getContentUrisByNames(files: Array<string>): Promise<any> {
+  return FileDelete.getContentUrisByNames(files);
+}
+
+export function getContentUrisByFileSystemUris(files: Array<string>): Promise<any> {
+  return FileDelete.getContentUrisByFileSystemUris(files);
 }
