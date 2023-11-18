@@ -1,6 +1,6 @@
 # React Native FileDelete
 
-A file-delete for deleting all file types in the ExternalStorage(Download, Images, Videos, Musique, etc..) of your Android device from react-native.
+A file-delete for deleting all file types in the ExternalStorageDirectory(Download, Images, Videos, Musique, etc..) of your Android device from react-native.
 Ex: html, pdf, jpeg, mp3, mp4, docx, etc..
 
 ## Installation
@@ -61,8 +61,8 @@ android:requestLegacyExternalStorage="true"
 
 FileDelete module provide 03 functions :
 * deleteFile
-  For delete a files by filenames or fileSystemUris so you can only use one parameter type.
-  There are 03 ways to initialize your options like shown below.
+  For deleting files by filenames or fileSystemUris you can only use one parameter type.
+  There are 03 ways to initialize your options as shown below.
 
     ```js
     import { deleteFile } from 'react-native-file-delete';
@@ -101,7 +101,7 @@ FileDelete module provide 03 functions :
     const uris = await getContentUrisByNames(options); 
     ```
 * getContentUrisByFileSystemUris
-    To get the file uri by external file system uri so function return uri from file://  to content:// 
+    To get the file uri by external file directory uri so function return uri from file://  to content:// 
     Ex: From file://storage/emulated/0/Download/20180702_121938.pdf 
         To content://media/external/file/1000060588
 
