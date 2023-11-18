@@ -55,7 +55,6 @@ import androidx.core.content.ContextCompat;
 import android.provider.Settings;
 
 import com.facebook.react.ReactActivity;
-import com.filedelete.ActivityResultLauncherWrapper;
 
 @ReactModule(name = FileDeleteModule.NAME)
 public class FileDeleteModule extends ReactContextBaseJavaModule implements PermissionListener {
