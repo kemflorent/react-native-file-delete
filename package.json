@@ -39,7 +39,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/kemflorent/react-native-file-delete",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemflorent/react-native-file-delete.git"
+  },
   "author": "Florent Kemdjeukeng <fkemdjeukeng@gmail.com> (https://github.com/kemflorent)",
   "license": "MIT",
   "bugs": {
@@ -153,5 +156,8 @@
       "module",
       "typescript"
     ]
+  },
+  "directories": {
+    "example": "example"
   }
 }
